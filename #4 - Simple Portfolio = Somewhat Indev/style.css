@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-nav: #23022E;
+  --nav-font: #573280;
+  --logo: 1.5rem;
+  --weight-logo: 700;
+  --size-anchor: 0.950rem;
+  --weight-anchor: 600;
+  --bg: #ADA8B6;
+  --header-hero: 3.5rem;
+  --side-kick: 1.250rem;
+  --para: 0.950rem;
+  --indent: 5rem;
+}
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  width: 100%;
+  background-color: var(--main-nav);
+  box-shadow: 5px 1.5px 1.5px #23022E;
+  
+}
+
+#main-nav nav {
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px;
+}
+
+#main-nav a {
+  color: var(--nav-font);
+  font-size: var(--size-anchor);
+  font-weight: var(--weight-anchor);
+  padding: 5px;
+
+}
+
+#main-nav li a:hover, 
+a:active {
+  border-bottom: 5px solid #573280;
+}
+
+#main-nav #Logo {
+  font-weight: var(--weight-logo);
+  font-size: var(--logo);
+}
+
+#main {
+  height: 90vh;
+  background-color: var(--bg);
+  padding: 200px 50px;
+}
+
+#main img {
+  width: 120px;
+  border-radius: 15%;
+  box-shadow: 5.50px 5.50px 0px darkviolet;
+  margin-bottom: 10px;
+}
+.header1 {
+  line-height: 2rem;
+}
+
+.header2,
+.webdev {
+  line-height: 1.350rem;
+}
+
+.header1 {
+  font-size: var(--header-hero);
+  padding: 15px 0px;
+  text-shadow: 4.5px 3px 1.5px blueviolet;
+}
+
+.header2 {
+  font-size: var(--side-kick);
+  
+}
+
+.webdev {
+  font-size: var(--para);
+}
+
+#cnt {
+  cursor: pointer;
+  margin-top: 0.550rem;
+  padding: 0.450rem;
+  border-radius: 5px;
+  transition: all .5s ease 0s;
+  box-shadow: 5px 5px 0px #573280;
+  background-color: violet;
+  transform: scale(1.065);
+  border: 2px solid blueviolet;
+}
+
+#cnt:hover{
+  box-shadow: 5px 5px 20px #573280;
+  transform: scale(1);
+  color: #fff;
+  transform: rotate(90deg);
+  transform: translateY(-7.5px);
+}
+
+#cnt:active {
+  transform: translateY(-1px);
+}
+
+

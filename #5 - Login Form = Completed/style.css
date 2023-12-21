@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Hero {
+  padding: 50px 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 25px;
+  border: 1.5px solid black;
+  backdrop-filter: blur(0.050rem);
+}
+
+#Hero h1 {
+  text-align: center;
+  margin-bottom: 1.35rem;
+  color: seagreen;
+  text-shadow: 1.5px 1.5px 1.0px limegreen;
+}
+
+#Hero input {
+  width: 100%;
+  padding: 15px 5px;
+  border-radius: 25px;
+  margin: 0px 0px 15px 0px;
+  border: 2px solid lightgreen;
+  transition: all 0.5s ease;
+  box-shadow: 5px 5px 0px lightgreen;
+}
+
+#Hero input:hover {
+  transform: scale(1.025);
+}
+
+#Hero #subfor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#subfor button {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: greenyellow;
+  color: seagreen;
+  font-weight: 900;
+  border: 2px solid lightgreen;
+  transition: all 0.5s ease;
+  text-shadow: 1.5px 1.5px 0px limegreen;
+  box-shadow: 4.5px 4.5px 0.20px lightgreen;
+}
+
+#subfor button:hover {
+  transform: scale(0.95);
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px 1.0px limegreen;
+  box-shadow: 1.75px 1.75px 1.5px lightgreen;
+}
+
+#subfor a {
+  color: seagreen;
+  text-shadow: 1.5px 1.5px 1.0px limegreen;
+  transition: all 0.5s ease;
+  font-weight: 900;
+}
+
+#subfor a:hover {
+  transform: scale(0.95);
+  font-weight: 700;
+  text-shadow: 2px 2px 1.25px lightgreen;
+}
+
+
+/*      Desktop Mode      */
+
+@media (min-width: 768px) {
+  #Hero {
+  padding: 25px 20px;
+  width: 900px;
+  height: 750px;
+  border-radius: 55px;
+  border: 3.5px solid black;
+  backdrop-filter: blur(0.050rem);
+}
+
+#Hero h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3.35rem;
+  color: seagreen;
+  text-shadow: 3.5px 3.5px 1.0px limegreen;
+}
+
+#Hero input {
+  width: 850px;
+  height: 120px;
+  padding: 15px 5px;
+  border-radius: 105px;
+  font-size: 2.23rem;
+  margin: 0px 0px 55px 0px;
+  border: 5px solid lightgreen;
+  transition: all 0.5s ease;
+  box-shadow: 10px 10px 0px lightgreen;
+}
+
+#Hero input:hover {
+  transform: scale(1.020);
+}
+
+#Hero #subfor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#subfor button {
+  width: 250px;
+  height: 120px;
+  padding: 15px;
+  border-radius: 55px;
+  background-color: greenyellow;
+  color: seagreen;
+  font-weight: 900;
+  font-size: 3rem;
+  border: 5px solid lightgreen;
+  transition: all 0.5s ease;
+  text-shadow: 5.5px 5.5px 0px limegreen;
+  box-shadow: 9.5px 9.5px 0.20px lightgreen;
+}
+
+#subfor button:hover {
+  transform: scale(0.95);
+  font-weight: 700;
+  text-shadow: 1.5px 1.5px 1.0px limegreen;
+  box-shadow: 1.75px 1.75px 1.5px lightgreen;
+}
+
+#subfor a {
+  color: seagreen;
+  font-size: 3rem;
+  text-shadow: 3.5px 3.5px 1.0px limegreen;
+  transition: all 0.5s ease;
+  font-weight: 900;
+}
+
+#subfor a:hover {
+  transform: scale(0.95);
+  font-weight: 700;
+  text-shadow: 5px 5px 1.25px lightgreen;
+}
+
+}}

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --navbar: #132A13;
+}
+
+body {
+  background: url("BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 112.6vh;
+}
+
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: var(--navbar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 4.5px solid #19533F;
+}
+
+#navbar nav {
+  width: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  font-size: 40px;
+}
+
+#navbar a {
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 2.5px 2.5px 0px #31572C;
+}
+
+#navbar a span {
+  color: #4F772D;
+}
+
+#navbar nav a i {
+  border: 1px solid #4F772D;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 1.5px 1.5px 0px #4F772D;
+}
+
+#navbar nav a i:hover  {
+  transform: scale(0.90);
+  color: #ECF39E;
+ 
+}
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(55px, 65px);
+  position: absolute;
+}
+
+#main-container {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  backdrop-filter: blur(1.5px);
+  border: 5px dotted #ECF39E;
+  border-radius: 15px;
+  transition: all .5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+}
+
+#main-container > .child-container {
+  width: 150px;
+  height: 150px;
+  background-color: #90A955;
+  border: 5px double #4F772D;
+  box-shadow: 10px 10px 0px #31572C;
+  transition: all .4s ease;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-container .child-container:hover {
+  transform: skew(-20deg, 5deg);
+}
+#main-container:hover {
+  transform: skew(10deg, 5deg);
+}
+
+.child-container a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-shadow: 2.5px 2.5px 0px #31572C;
+}
+
+.child-container a span {
+  color: #4F772D;
+}
+
+#detail-container div {
+  margin-top: 15px;
+  line-height: 30px;
+}
+
+#detail-container h1 {
+  color: #fff;
+  background: #4F772D;
+  padding: 10px;
+  border: 2px solid #19533F;
+  border-radius: 15px;
+  text-shadow: 2.5px 2.5px 0px #9CD3C5;
+}
+
+#detail-container h1 .firstChild {
+  color: #40916C;
+  text-shadow: 2.5px 2.5px 0px #1B4332;
+  transition: all .4s ease;
+}
+
+#detail-container h1 .firstChild:hover {
+  color: #1B4332;
+  text-shadow: 2.5px 2.5px 0px #40916C;
+}
+
+#detail-container h1 .secondChild {
+  color: #1B4332;
+  text-shadow: 2.5px 2.5px 0px #40916C;
+  transition: all .4s ease;
+}
+
+#detail-container h1 .secondChild:hover {
+  color: #40916C;
+  text-shadow: 2.5px 2.5px 0px #1B4332;
+}
+
+#detail-container p {
+  color: #52B788;
+  font-weight: 600;
+}
+
+#detail-container p span {
+  color: #95D5B2;
+}
+
+#detail-container div .explore {
+  margin-top: 20px;
+  padding: 10px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  border-radius: 50px;
+  border: 4px solid #4F772D;
+  transition: all .3s ease 0s;
+}
+
+#detail-container div .explore:hover {
+  background-color: #132A13;
+  color: black;
+  box-shadow: 0px 15px 20px #36531E;
+  transform: translateY(3px);
+  
+}
+
+#detail-container div .explore:active {
+  transform: translateY(1px);
+}
+
+#detail-container div .explore i {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 108.21vh;
+  }
+  
+  #navbar {
+    width: 100%;
+    height: 150px;
+    padding: 40px;
+    border-bottom: 9.5px solid #19533F;
+  }
+  
+  #navbar nav {
+  width: 300px;
+  padding: 20px;
+  
+}
+
+  #navbar a {
+  font-size: 60px;
+  text-shadow: 4.5px 4.5px 0px #31572C;
+}
+
+  #navbar a span {
+  color: #4F772D;
+}
+
+  #navbar nav a i {
+  border: 2.5px solid #4F772D;
+  border-radius: 45px;
+  padding: 8px;
+  margin-right: 3px;
+  box-shadow: 3.5px 3.5px 0px #4F772D;
+}
+
+  #navbar nav a i:hover  {
+  transform: scale(0.90);
+  color: #ECF39E;
+}
+
+  #hero-container {
+  transform: translate(155px, 375px);
+}
+
+  #main-container {
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+  backdrop-filter: blur(3.5px);
+  border: 10px dotted #ECF39E;
+  border-radius: 25px;
+  margin-right: 
+}
+
+  #main-container > .child-container {
+  width: 300px;
+  height: 300px;
+  border: 5px double #4F772D;
+  box-shadow: 20px 20px 0px #31572C;
+  border-radius: 35px;
+}
+
+  .child-container a {
+  font-size: 38px;
+  text-shadow: 4.5px 4.5px 0px #31572C;
+}
+
+  #detail-container div {
+  margin-top: 30px;
+  line-height: 30px;
+}
+  
+  #detail-container h1 {
+  padding: 20px 65px;
+  border: 4px solid #19533F;
+  border-radius: 25px;
+  text-shadow: 4.5px 4.5px 0px #9CD3C5;
+  font-size: 46px;
+  
+}
+
+  #detail-container h1 .firstChild {
+  text-shadow: 4.5px 4.5px 0px #1B4332;
+}
+
+  #detail-container h1 .firstChild:hover {
+  color: #1B4332;
+  text-shadow: 4.5px 4.5px 0px #40916C;
+}
+
+  #detail-container h1 .secondChild {
+  text-shadow: 4.5px 4.5px 0px #40916C;
+  }  
+
+#detail-container h1 .secondChild:hover {
+  text-shadow: 4.5px 4.5px 0px #1B4332;
+}
+
+  #detail-container p {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+  #detail-container p span {
+    font-size: 26px;
+  }
+  
+    #detail-container div .explore {
+  margin-top: 60px;
+  padding: 25px;
+  font-size: 20px;
+  border-radius: 75px;
+  border: 8px solid #4F772D;
+}
+
+  #detail-container div .explore:hover {
+
+  box-shadow: 0px 15px 20px #36531E;
+  transform: translateY(6px);
+  
+}
+
+#detail-container div .explore:active {
+  transform: translateY(3px);
+}
+
+#detail-container div .explore i {
+  font-size: 25px;
+  margin-left: 10px;
+}
+}
